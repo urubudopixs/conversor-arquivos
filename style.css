@@ -1,0 +1,34 @@
+/* Definindo o estilo básico do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+}
+
+/* Estilo do formulário de upload */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
