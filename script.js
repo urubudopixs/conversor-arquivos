@@ -1,16 +1,16 @@
- Adicionando o evento de submit no formulário
 document.getElementById('uploadForm').addEventListener('submit', function(event) {
-     Previne o envio do formulário para que possamos manipular o arquivo
-    event.preventDefault();
-    
-     Pegando o arquivo selecionado pelo usuário
-    var fileInput = document.getElementById('fileInput');
-    var file = fileInput.files[0];
+    event.preventDefault();  // Impede o comportamento padrão de envio do formulário
 
-     Verificando se um arquivo foi selecionado
-    if (file) {
-        alert('Arquivo pronto para conversão ' + file.name);
-         Aqui você pode adicionar a lógica de conversão do arquivo
+    let fileInput = document.getElementById('fileInput');
+    let file = fileInput.files[0];
 
-         Exemplo apenas exibindo o nome do arquivo no console
-        console.log('Arquivo sele
+    if (!file) {
+        alert('Por favor, escolha um arquivo para converter!');
+        return;
+    }
+
+    // Aqui você pode adicionar a lógica para converter o arquivo.
+    // Neste exemplo, apenas mostramos um alerta.
+    alert('Arquivo selecionado: ' + file.name);
+
+    // Simulação de processo de 
